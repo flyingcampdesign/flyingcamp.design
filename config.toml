@@ -80,11 +80,11 @@ icon = "fa fa-2x fa-twitter"
 weight = 2
 url = "https://twitter.com/flyingcamp/"
 
-# [[params.social]]
-# name = "LinkedIn"
-# icon = "fa fa-2x fa-linkedin"
-# weight = 3
-# url = "https://www.linkedin.com/in/flyingcampdesign/"
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 3
+url = "https://www.linkedin.com/company/flyingcampdesign/"
 
 [[params.social]]
 name = "RSS"
