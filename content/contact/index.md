@@ -6,7 +6,7 @@ typora-copy-images-to: ./images
 
 
 
-We'd love to talk with you!  You can get in touch by emailing [hi@flyingcamp.design](mailto:hi@flyingcamp.design)
+We'd love to talk with you!  You can get in touch by emailing [hello@flyingcamp.design](mailto:hello@flyingcamp.design)
 
 ## Support
 
