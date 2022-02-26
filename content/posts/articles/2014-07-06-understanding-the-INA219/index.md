@@ -14,6 +14,10 @@ math: true
 typora-copy-images-to: ./images
 ---
 
+{{< notice info >}}
+This article was previously published at http://cdwilson.us/articles/understanding-the-INA219/
+{{< /notice >}}
+
 The [INA219 datasheet][] provides an example calibration workflow, but doesn't
 really explain how some of the equations and constant values are derived.  This
 article tries to fill in some of the gaps that weren't obvious to me when I
@@ -356,11 +360,12 @@ specific examples:
 
 ## Revision History
 
-| Revision | Date       | Description                    |
-| -------- | ---------- | ------------------------------ |
-| 1        | 07/06/2014 | Initial release                |
-| 2        | 08/19/2014 | Fixes for Kramdown syntax      |
-| 3        | 11/01/2014 | Minor clarifications and fixes |
+| Revision | Date       | Description                                                  |
+| -------- | ---------- | ------------------------------------------------------------ |
+| 1        | 07/06/2014 | Initial release                                              |
+| 2        | 08/19/2014 | Fixes for Kramdown syntax                                    |
+| 3        | 11/01/2014 | Minor clarifications and fixes                               |
+| 4        | 02/24/2022 | [Link](http://cdwilson.us/articles/understanding-the-INA219/) from old personal site redirects here |
 
 
 ## Footnotes
