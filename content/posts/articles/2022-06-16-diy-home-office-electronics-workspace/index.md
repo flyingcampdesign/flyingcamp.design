@@ -94,7 +94,7 @@ However, I wanted an easier/cleaner way to ground the mat to the power strip und
 
 ![prostat.png](images/prostat.png "Prostat PGC-015Q")
 
-Once everything is properly connected, you and your workstation should be at the same electrical potential.  Ideally, no more shocky shocky to your sensitive blinky blinkies!
+Once everything is properly connected, you and your workstation should be at the same electrical potential.  Ideally, no more ⚡️shocky shocky⚡️ to your sensitive 🤖 blinky blinkies!
 
 **But wait... how do you ensure that everything is properly grounded, and more importantly, *stays* grounded over time?**
 
@@ -110,26 +110,32 @@ If I was purchasing a brand new single-wire monitor in the $100 range, I'd buy t
 - [Metal Mounting Bracket for the ST or DT 020 Series](https://store.unitedesd.com/wrist_strap_monitor_metal_mounting_bracket_p/9202-brk.htm) (mounts the monitor to the underside of the desk)
 - [Secure Monitor to Mat Adapter for the DT and ST Series](https://store.unitedesd.com/ESD_Wrist_strap_constant_monitor_single_threshold_p/gc-mini.htm) (connects the monitor directly to the 10mm snap on the mat)
 
-However, I'm cheap... so, I found a broken [Botron B9202](https://www.botron.com/product/single-operator-and-mat-continuous-monitor/) single-wire monitor on eBay for $15, and fixed the broken BNC jack myself:
+However, I'm cheap... so, I bought a broken [Botron B9202](https://www.botron.com/product/single-operator-and-mat-continuous-monitor/) single-wire monitor on eBay for $15, and fixed the broken BNC jack myself:
 
-![b9202.jpeg](images/b9202.jpeg)
+![B9202.png](images/B9202.png)
+
+A quick aside: my electronics workbench in the garage has a [Statico S2555](https://statico.com/products/s2555) which looks nearly identical to the B9202... could they be the same? 🤔
+
+![S2555.png](images/S2555.png)
+
+Taking them both apart revealed that they have exactly the same PCB!
+
+![hzr-103-pcb.png](images/hzr-103-pcb.png)
+
+My suspicion is that all the single-wire AC Capacitance Monitors in this form factor are all just white-labeled units built by [HZR](https://www.esd-hzr.com/) in Shenzhen.  The takeaway: I think the only difference between the brands is what accessories come with the unit (mounting brackets, cables, etc), but they are all the same electronics inside the box.
 
 **OK, so how do we hook this Continuous Monitor up?**
 
-Here's the connection diagram for the [Aratron AEI-ST020](https://www.aratron.us/aei-st020.htm) (which is functionally identical to the Botron B9202):
+Here's the connection diagram for the [Aratron AEI-ST020](https://www.aratron.us/aei-st020.htm) (which is functionally identical to the B9202 & S2555):
 
 ![esd-connection-diagram.png](images/esd-connection-diagram.png)
 
-1. Connect the included power supply to the monitor and to a grounded power outlet (the unit is grounded through the power supply for 120VAC units)
-2. Connect the "Bench System Ground" connection on the monitor to one of the 10mm snaps on the ESD mat.  If you want to use the included cable, you'll need to pick up some banana jack-to-10mm adapters (e.g. [Transforming Technologies CS0127](https://www.digikey.com/short/qj91q8zh)).  Alternatively, you can use one of these cables: [Secure Monitor to Mat Adapter for the DT and ST Series](https://store.unitedesd.com/ESD_Wrist_strap_constant_monitor_single_threshold_p/gc-mini.htm)
+1. Connect the included power supply to the monitor and to a grounded power outlet.  The unit is grounded through the power supply for 120VAC, so no need for a separate ground connection on the monitor itself.
+2. Connect the "Bench System Ground" connection on the back of the monitor to one of the 10mm snaps on the ESD mat.  If you want to use the included cable, you'll need to pick up some banana jack-to-10mm adapters (e.g. [Transforming Technologies CS0127](https://www.digikey.com/short/qj91q8zh)).  Alternatively, you can use one of these integrated cables instead: [Secure Monitor to Mat Adapter for the DT and ST Series](https://store.unitedesd.com/ESD_Wrist_strap_constant_monitor_single_threshold_p/gc-mini.htm)
 3. Connect the Prostat grounding cable to the other 10mm snap on the ESD mat
 4. Plug the wrist strap into the "Operator" banana jack connection on the front of the monitor
 
-**TODO: Show internals of the different single-wire monitors**
-
-**TODO: How do we test the monitor itself?**
-
-**An ESD intermission**
+**An ESD intermezzo**
 
 If you want the most...shall we say..."entertaining" and informative introduction to ESD, check out this video from the inventor of the original pink poly ESD bag:
 
