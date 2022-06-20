@@ -1,10 +1,10 @@
 ---
-title: DIY home office electronics lab
+title: DIY home office electronics workspace
 authors:
 - Chris Wilson
-date: "2022-05-18"
+date: "2022-06-16"
 draft: true
-slug: diy-home-office-electronics-lab
+slug: diy-home-office-electronics-workspace
 tags:
 - electronics lab
 - IKEA hacks
@@ -15,7 +15,7 @@ typora-copy-images-to: ./images
 
 # The idea
 
-I've been wanting to set up a small electronics workspace in my home office for a while now.  The main goal was to have a (relatively) ESD-safe area for working on electronics integrated with my main office workspace.  I have a separate full size electronics workbench in the garage, but I wanted a dedicated space in the office where I could do bring-up and testing for  projects that require a connection to a computer and test equipment.
+I've been wanting to set up a small electronics workspace in my home office for a while now.  The main goal was to have a (relatively) ESD-safe area for working on electronics integrated with my main office desk space.  I have a separate full size electronics workbench in the garage, but I wanted a dedicated space in the office where I could do bring-up and testing for  projects that require a connection to a computer and test equipment.
 
 I've made a couple improvements since this original tweet, so I wanted to post a follow-up with a more detailed look at the build process and some of the things I learned along the way.
 
@@ -68,11 +68,11 @@ I chose not to install the rear panel of the BILLY shelves because some of the t
 
 I wanted to reduce the risk of an [electrostatic discharge (ESD)](https://en.wikipedia.org/wiki/Electrostatic_discharge) event damaging a board.  This involved setting up an [“ESD Protected Area” (EPA)](https://scs-static-control-solutions.blog/2018/10/18/how-to-create-an-esd-protected-area-at-an-existing-workstation/) with a grounded anti-static worksurface mat and wrist strap.
 
-[ESD matting](https://www.antistat.co.uk/blog/2017/12/05/everything-need-know-esd-matting-probably/) is designed to drain any buildup of static charge from items placed on its surface.  It can be made with either vinyl or rubber, or a combination of the two (known as "Homogenous").  Vinyl mats are the most widely used because they are cost-effective, easy to cut to shape and provide excellent static dissipation.  The vinyl matting comes in 2 or 3-layers, where the 3-layer has better electrical properties, but is more expensive.  I'd recommend going with a 3-layer vinyl mat unless you need the high resistance to heat and chemicals of rubber mats.
+[ESD matting](https://www.antistat.co.uk/blog/2017/12/05/everything-need-know-esd-matting-probably/) is designed to drain any buildup of static charge from items placed on its surface.  It can be made with either vinyl or rubber, or a combination of the two (known as "Homogenous").  Vinyl mats are the most widely used because they are cost-effective, easy to cut to shape and provide excellent static dissipation.  The vinyl matting comes in 2 or 3-layers, where the 3-layer has better electrical properties, but is more expensive.  I'd recommend going with a 3-layer vinyl mat unless you need the high resistance to heat and/or chemicals provided by rubber mats.
 
-[ESD wrist straps](https://scs-static-control-solutions.blog/2017/11/30/an-introduction-to-wrist-straps/) are designed to provide a safe electrical connection between your skin and common workstation ground point.  For safety, the wrist straps have a 1MΩ resistor which limits the current in case of an accidental contact with high voltages up to 250VAC.  They can come in a variety of band styles: [metal](https://store.unitedesd.com/WS_1037_Metal_Expansion_Plastic_Encapsulated_Wrist_p/ws-1037.htm), [cloth](https://store.unitedesd.com/WS_1020_Premium_ESD_Wrist_Strap_p/ws-1020.htm), or [gel](https://store.unitedesd.com/ESD_Gel_Wrist_Strap_and_Coil_Cord_p/w00404.htm).  I find the cloth bands to be the most comfortable, but they are cheap enough that you could pick up one of each and decide what works best for you.
+[ESD wrist straps](https://scs-static-control-solutions.blog/2017/11/30/an-introduction-to-wrist-straps/) are designed to provide a safe electrical connection between your skin and common workstation ground point.  For safety, the wrist straps have an inline 1MΩ resistor which limits the current through your body in case of an accidental contact with high voltages up to 250VAC.  They can come in a variety of band styles: [metal](https://store.unitedesd.com/WS_1037_Metal_Expansion_Plastic_Encapsulated_Wrist_p/ws-1037.htm), [cloth](https://store.unitedesd.com/WS_1020_Premium_ESD_Wrist_Strap_p/ws-1020.htm), or [gel](https://store.unitedesd.com/ESD_Gel_Wrist_Strap_and_Coil_Cord_p/w00404.htm).  I find the cloth bands to be the most comfortable, but they are cheap enough that you could probably pick up one of each and decide what works best for you.
 
-I ended up purchasing a [Bertech ESD Anti-Static Vinyl Mat Kit (3059-24x30BKT)](https://www.amazon.com/gp/product/B08722C28D) because it comes with the mat and the wrist strap as a kit, and it fits *PERFECTLY* in the 30" width of the IKEA shelf (no cutting required):
+I ended up purchasing a [Bertech ESD Anti-Static Vinyl Mat Kit (3059-24x30BKT)](https://www.amazon.com/gp/product/B08722C28D) because it comes with the mat and the wrist strap as a kit, and it fits *PERFECTLY* in the 30" wide opening of the IKEA shelf (no cutting of the ESD mat required):
 
 ![esd-mat-kit.jpg](images/esd-mat-kit.jpg "3059-24x30BKT")
 
@@ -86,23 +86,23 @@ I used some velcro tape to secure the mat to the desktop:
 
 **How do we ground the mat?**
 
-The mat kit comes with a grounding cord that connects the 10mm snap on the mat to an "eyelet" (a #10 ring terminal) for a screw connection to earth ground.  Many NEMA 5-15R power outlets in the US have a center screw that can be used for this purpose.
+The mat kit comes with a grounding cord that connects the 10mm snap on the mat to an "eyelet" (a #10 ring terminal) for a screw connection to earth ground.  Many NEMA 5-15R power outlets in the US have a grounded center screw that can be used for this purpose.
 
 ![eyelet-grounding.png](images/eyelet-grounding.png)
 
-However, I wanted an easier/cleaner way to ground the mat to the power strip under my desk, so I purchased a [Prostat PGC-015Q Green Ground Cord & Qube](https://www.amazon.com/dp/B0060AG7W4) adapter.  The "Qube" grounded plug adapter comes with a banana jack cable to connect the 10mm snap on the mat to the outlet common ground.  The wrist strap can be connected to one of the two female banana jack receptacles on the green ground cord:
+However, I wanted an easier/cleaner way to ground the mat to the power strip under my desk, so I purchased a [Prostat PGC-015Q Green Ground Cord & Qube](https://www.amazon.com/dp/B0060AG7W4) adapter.  The "Qube" grounded plug adapter comes with a banana jack cable to connect the 10mm snap on the mat to an outlet's common ground.  The wrist strap can be connected to one of the two female banana jack receptacles on the green ground cord snap:
 
 ![prostat.png](images/prostat.png "Prostat PGC-015Q")
 
-Once everything is properly connected, you and your workstation should be at the same electrical potential as earth ground.
+Once everything is properly connected, you and your workstation should be at the same electrical potential.  Ideally, no more shocky shocky to your sensitive blinky blinkies!
 
 **But wait... how do you ensure that everything is properly grounded, and more importantly, *stays* grounded over time?**
 
-There are devices that can continuously monitor both the ESD mat and wrist strap's connection to ground, and provide an audible alert if one of those connections fails.  These continuous monitors are generally classified by whether they use a [single-wire vs. dual-wire](https://scs-static-control-solutions.blog/2017/12/14/comparing-single-wire-and-dual-wire-monitors/) wrist strap.  Dual-wire monitors were developed to address some of the problems with single-wire wrist straps, but are more expensive ($200+).  Some of the newer single-wire monitors (like the [Aratron AEI-DT020](https://www.aratron.us/aei-dt020.htm)) have a dual threshold capability that can also detect failure of the safety resistor in the wrist strap, in addition to monitoring the ground connection.
+Cables can come loose, wrist straps can fail, so it's possible that you think you're grounded when you're actually not.  There are devices that can continuously monitor both the ESD mat and wrist strap's connection to ground, and provide an audible alert if one of those connections fails.  These continuous monitors are generally classified by whether they use a [single-wire vs. dual-wire](https://scs-static-control-solutions.blog/2017/12/14/comparing-single-wire-and-dual-wire-monitors/) wrist strap.  Dual-wire monitors were developed to address some of the problems with single-wire wrist straps, but are usually more expensive ($200+).  Some of the newer single-wire monitors (like the [Aratron AEI-DT020](https://www.aratron.us/aei-dt020.htm)) have a dual threshold capability that can also detect failure of the safety resistor in the wrist strap, in addition to monitoring the ground connection of the operator.
 
 **So what should you get?**
 
-If I was drowning in cash, I'd grab a fancy dual-wire monitor like the [SCS CTC331-WW](https://staticcontrol.descoindustries.com/SCSCatalog/Static-Control-Monitors/Workstation-Monitors/Iron-Man-Plus-Monitor/CTC331-WW/#.YrAAlezMI0Q) which has an additional monitoring channel for detecting overvoltage events from hand tools touching the PCB (soldering iron, tweezers, etc).  This is probably overkill for most home labs.
+If I was drowning in cash, I'd grab a fancy dual-wire monitor like the [SCS CTC331-WW](https://staticcontrol.descoindustries.com/SCSCatalog/Static-Control-Monitors/Workstation-Monitors/Iron-Man-Plus-Monitor/CTC331-WW/#.YrAAlezMI0Q) which has an additional monitoring channel for detecting overvoltage events from hand tools touching the PCB (soldering iron, tweezers, etc).  This is probably overkill for most home labs.
 
 If I was purchasing a brand new single-wire monitor in the $100 range, I'd buy the following dual threshold monitor kit:
 
@@ -124,6 +124,10 @@ Here's the connection diagram for the [Aratron AEI-ST020](https://www.aratron.us
 2. Connect the "Bench System Ground" connection on the monitor to one of the 10mm snaps on the ESD mat.  If you want to use the included cable, you'll need to pick up some banana jack-to-10mm adapters (e.g. [Transforming Technologies CS0127](https://www.digikey.com/short/qj91q8zh)).  Alternatively, you can use one of these cables: [Secure Monitor to Mat Adapter for the DT and ST Series](https://store.unitedesd.com/ESD_Wrist_strap_constant_monitor_single_threshold_p/gc-mini.htm)
 3. Connect the Prostat grounding cable to the other 10mm snap on the ESD mat
 4. Plug the wrist strap into the "Operator" banana jack connection on the front of the monitor
+
+**TODO: Show internals of the different single-wire monitors**
+
+**TODO: How do we test the monitor itself?**
 
 **An ESD intermission**
 
