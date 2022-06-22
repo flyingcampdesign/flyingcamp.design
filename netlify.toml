@@ -1,2 +1,7 @@
 [context.production.environment]
   HUGO_VERSION = "0.101.0"
+[[redirects]]
+  from = "/articles/understanding-the-INA219/"
+  to = "https://cdwilson.dev/articles/understanding-the-ina219/"
+  status = 301
+  force = true

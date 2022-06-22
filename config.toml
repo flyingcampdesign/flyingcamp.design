@@ -102,10 +102,10 @@ type = "application/rss+xml"
 # weight = 1
 # url = "about/"
 
-[[menu.main]]
-name = "Articles"
-weight = 2
-url = "articles/"
+# [[menu.main]]
+# name = "Articles"
+# weight = 2
+# url = "articles/"
 
 # [[menu.main]]
 # name = "Projects"
