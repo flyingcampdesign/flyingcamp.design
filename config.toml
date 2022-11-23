@@ -13,7 +13,7 @@ author = "Flying Camp Design"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Flying Camp Design"
 keywords = ""
-info = ["Open-source Hardware Design"]
+# info = [""]
 avatarURL = "images/fcd_logo.png"
 dateFormat = "January 2, 2006"
 since = 2022
@@ -97,20 +97,20 @@ url = "https://flyingcamp.design/index.xml"
 rel = "alternate"
 type = "application/rss+xml"
 
-# [[menu.main]]
-# name = "About"
-# weight = 1
-# url = "about/"
+[[menu.main]]
+name = "About"
+weight = 1
+url = "about/"
 
 # [[menu.main]]
 # name = "Articles"
 # weight = 2
 # url = "articles/"
 
-# [[menu.main]]
-# name = "Projects"
-# weight = 3
-# url = "projects/"
+[[menu.main]]
+name = "Products"
+weight = 3
+url = "products/"
 
 [[menu.main]]
 name = "Contact"
