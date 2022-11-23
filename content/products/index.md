@@ -4,6 +4,14 @@ slug: products
 typora-copy-images-to: ./images
 ---
 
+{{< notice info >}}
+
+All products on this page have been discontinued and are no longer available for purchase.
+
+Please reach out to support@flyingcamp.design for product support.
+
+{{< /notice >}}
+
 # MSP430 BSL Programmer
 
 ##### FCD-PRG01
