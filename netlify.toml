@@ -1,7 +1,32 @@
 [context.production.environment]
   HUGO_VERSION = "0.101.0"
+
 [[redirects]]
   from = "/articles/understanding-the-ina219/"
   to = "https://cdwilson.dev/articles/understanding-the-ina219/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/msp430-bsl-programmer.html"
+  to = "/products/#msp430-bsl-programmer"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/msp430-bsl-utility.html"
+  to = "/products/#msp430-bsl-utility"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/usb-device.html"
+  to = "https://github.com/flyingcampdesign/usb-device"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/support.html"
+  to = "/contact/"
   status = 301
   force = true
